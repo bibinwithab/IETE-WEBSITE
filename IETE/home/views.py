@@ -9,3 +9,9 @@ from django.shortcuts import render
 
 class HomePageView(TemplateView):
     template_name = 'home/home.html'
+
+# def home(request):
+#     content = {
+#         'name':'Home',
+#     }
+#     return render(request, 'home/home.html', context=content)
