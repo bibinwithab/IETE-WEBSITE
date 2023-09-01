@@ -7,15 +7,14 @@
 </head>
 <body>
     
+    <div class="container">
+        <h1 style="text-align: center; color: #55190a;" >Events</h1><hr>
     {% for event in events %}
-        <div class="container">
-            <h1>Events</h1>
-            <h2>{{event.title}}</h2>
+            <h2>Event name: {{event.title}}</h2>
             <p>{{event.description}}</p><br>
             <p>{{event.date| date:"F d, Y"}}</p>
             <p>{{event.time| time:"h A"}}</p>
-            <p>{{event.venue}}</p>
-
+            <p>{{event.venue}}</p><hr>
     {%endfor%}
 </body>
 </html>

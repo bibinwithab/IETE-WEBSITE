@@ -1,9 +1,10 @@
-from django.http import HttpResponse
+
 from django.shortcuts import render
-from .models import Events
+from .models import Event
 
 def events(request):
     context = {
-        'events':Events.objects.all()
+        'events':Event.objects.all(),
+        'name' : 'EVENTS',
     }
     return render(request, 'events/event.html', context)
