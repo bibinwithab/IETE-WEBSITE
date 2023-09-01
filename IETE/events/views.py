@@ -1,7 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-
-# Create your views here.
+from .models import Events
 
 def events(request):
-    return HttpResponse("<h1> jhhakjk</h1>")
+    context = {
+        'events':Events.objects.all()
+    }
+    return render(request, 'events/event.html', context)
