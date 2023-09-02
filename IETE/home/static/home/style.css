@@ -60,10 +60,3 @@ nav ul li a:hover::after{
     font-size: 40px;
     color: blue;
 }
-.footer{
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin-top: 5%;
-    padding: 10px;
-}
