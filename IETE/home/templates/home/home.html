@@ -4,7 +4,8 @@
 <div class="header">
     <div class="container">
         <nav>
-            <img src="image/images.png"  class="logo">
+            {% load static %}
+            <img src="{% static 'home/logo.jpg' %}" alt="Logo" class="logo" style="border-radius: 10%;">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="{% url 'about' %}">About us</a></li>
@@ -14,9 +15,29 @@
         </nav>
         <div class="header-text">
             <h1>Welcome to IETE!</h1><br>
-            <h3>Learning Today,Leading Tomorrow</h3>
+            <h3>Learning Today,Leading Tomorrow</h3><br><br><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus officia accusantium labore eum aut inventore neque esse voluptatibus exercitationem? Quos facilis ratione ut quod nobis laudantium mollitia. Beatae, perferendis aperiam.</p>
+
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus eius nulla facilis quasi debitis itaque tempore, voluptatum ab? Ipsum maiores quos quam porro odit soluta velit distinctio! Dolore, ratione omnis?</p>
+
+            <br>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus enim dolorum obcaecati vero mollitia earum rerum sint praesentium illo velit deserunt perspiciatis quas, facere id beatae maiores. Eaque, exercitationem adipisci!</p>
+
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus officia accusantium labore eum aut inventore neque esse voluptatibus exercitationem? Quos facilis ratione ut quod nobis laudantium mollitia. Beatae, perferendis aperiam.</p>
+
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus eius nulla facilis quasi debitis itaque tempore, voluptatum ab? Ipsum maiores quos quam porro odit soluta velit distinctio! Dolore, ratione omnis?</p>
+
+            <br>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus enim dolorum obcaecati vero mollitia earum rerum sint praesentium illo velit deserunt perspiciatis quas, facere id beatae maiores. Eaque, exercitationem adipisci!</p>
         </div>
     </div>
-</div>
+    <footer>
+        <div class="footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero possimus facilis eligendi ad minima quia commodi vel veritatis, voluptatum sit temporibus.</p>
+        </div>
+    </footer>
+
 
 {% endblock content %}

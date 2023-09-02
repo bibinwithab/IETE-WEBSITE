@@ -1,11 +1,16 @@
 from django import forms
+from .models import Registration
 
 # creating a form
-class InputForm(forms.Form):
+class RegisterForm(forms.Form):
 
-	first_name = forms.CharField(max_length = 200)
-	last_name = forms.CharField(max_length = 200)
-	roll_number = forms.IntegerField(
-					help_text = "Enter 6 digit roll number"
-					)
-	password = forms.CharField(widget = forms.PasswordInput())
+	name = forms.CharField(max_length = 200)
+	email = forms.EmailField()
+	phone = forms.IntegerField(max_value=10)
+	college = forms.CharField(max_length=100)
+	branch = forms.CharField(max_length=100)
+	year = forms.CharField(max_length=100)
+
+	class Meta:
+		model = Registration
+		fields="__all__"
