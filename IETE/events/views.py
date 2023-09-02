@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import Event, Registration
-from .forms import RegisterForm
+from .models import Event
+from django.contrib import messages
 
 
 def events(request):
@@ -10,16 +10,3 @@ def events(request):
         'name' : 'EVENTS',
     }
     return render(request, 'events/event.html', context)
-
-
-def register(request):
-
-    
-
-
-
-    content = {
-        'name':'REGISTER',
-    }  
-
-    return render(request, 'events/register.html', context=content)

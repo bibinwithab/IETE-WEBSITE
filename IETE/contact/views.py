@@ -16,6 +16,8 @@ def contact(request):
 
         Contact.objects.create(name=name, email=email, message=message)
 
+    
+
         return HttpResponse('<h1>thank-you. Your response is recorded</h1>')
 
     return render(request, 'contact/contact.html', context=content)

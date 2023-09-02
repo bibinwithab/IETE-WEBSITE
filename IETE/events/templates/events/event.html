@@ -2,18 +2,21 @@
 
 {%block content%}
 
-<div class="event-details">
-    {% for event in events %}
-    <h2>Event Name:{{event.name}}</h2>
-    <p class="event-date"><span class="Date">Date:
-    </span> {{event.date | date:"F d, Y"}}</p>
-    <p class="event-location"><span>location :</span> {{event.venue}}</p>
-    <div class="event-description">
-        <p>{{event.description}}</p>
+    <header>
+        <h1>Upcoming Events! Register Now!</h1>
+    </header>
+    <div class="event-details">
+        {% for event in events %}
+        <h2>Event Name:{{event.name}}</h2>
+        <p class="event-date"><span class="Date">Date:
+        </span> {{event.date | date:"F d, Y"}}</p>
+        <p class="event-location"><span>location :</span> {{event.venue}}</p>
+        <div class="event-description">
+            <p>{{event.description}}</p>
+        </div>
+        <button class="register-button" id="registerButton">Register Now</a></button>
+        {% endfor %}
     </div>
-    <button class="register-button" id="registerButton"><a href="{% url 'register' %}">Register Now</a></button>
-    {% endfor %}
-</div>
 
 
 {%endblock content%}
