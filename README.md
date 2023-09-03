@@ -1,5 +1,5 @@
 # 
-##IETE-WEBSITE 
+# #IETE-WEBSITE 
 
 Basic website created using django framework for the g20 competition 
 #
