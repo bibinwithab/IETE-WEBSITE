@@ -13,6 +13,14 @@ Go in the repo folder
 ```
 cd IETE-WEBSITE
 ```
+Activate virtual environment (for windows powershell)
+```PowerShell
+.\venv\bin\activate.ps1
+```
+or Install requirements using pip
+```
+pip install -r requirements.txt
+```
 Go into the project folder
 ```
 cd IETE
