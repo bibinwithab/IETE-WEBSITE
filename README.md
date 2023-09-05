@@ -7,7 +7,7 @@ Basic website created using django framework for the g20 competition
 
 Clone the repo in your local machine
 ```bash
-git clone https://github.com/bibinwithab/IETE-WEBSITE/IETE-WEBSITE
+git clone https://github.com/bibinwithab/IETE-WEBSITE
 ```
 Go in the repo folder
 ```
