@@ -7,11 +7,19 @@ Basic website created using django framework for the g20 competition
 
 Clone the repo in your local machine
 ```bash
-git clone https://github.com/bibinwithabIETE-WEBSITE/IETE-WEBSITE
+git clone https://github.com/bibinwithab/IETE-WEBSITE
 ```
 Go in the repo folder
 ```
 cd IETE-WEBSITE
+```
+Activate virtual environment (for windows powershell)
+```PowerShell
+.\venv\bin\activate.ps1
+```
+or Install requirements using pip
+```
+pip install -r requirements.txt
 ```
 Go into the project folder
 ```
